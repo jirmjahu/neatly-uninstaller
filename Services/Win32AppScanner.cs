@@ -5,6 +5,8 @@ namespace neatly.uninstaller.Services;
 
 public class Win32AppScanner : IAppScanner
 {
+
+    private readonly AppIconProvider _iconProvider = new();
     
     private readonly string[] _registryPaths =
     [
@@ -56,7 +58,9 @@ public class Win32AppScanner : IAppScanner
             var uninstallString = subkey.GetValue("UninstallString") as string;
             var displayIcon = subkey.GetValue("DisplayIcon") as string; 
             
-            apps.Add(new InstalledApp(name, publisher, version, installLocation, uninstallString, displayIcon));
+            var icon = _iconProvider.GetIcon(name);
+            
+            apps.Add(new InstalledApp(name, publisher, version, installLocation, uninstallString, displayIcon, icon));
         }
     }
 }
