@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "neatly.uninstaller", "neatly.uninstaller.csproj", "{02E8540A-D0C7-4598-B3B5-B8464AA640A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neatly.Uninstaller", "src\Neatly.Uninstaller\Neatly.Uninstaller.csproj", "{02E8540A-D0C7-4598-B3B5-B8464AA640A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
