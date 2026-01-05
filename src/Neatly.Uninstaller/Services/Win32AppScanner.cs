@@ -57,8 +57,7 @@ public class Win32AppScanner : IAppScanner
             var installLocation = subkey.GetValue("InstallLocation") as string;
             var uninstallString = subkey.GetValue("UninstallString") as string;
             var displayIcon = subkey.GetValue("DisplayIcon") as string; 
-            
-            var icon = _iconProvider.GetIcon(name);
+            var icon = _iconProvider.GetIcon(displayIcon);
             
             apps.Add(new InstalledApp(name, publisher, version, installLocation, uninstallString, displayIcon, icon));
         }

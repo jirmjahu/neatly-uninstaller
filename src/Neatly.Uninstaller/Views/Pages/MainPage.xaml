@@ -4,11 +4,16 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:neatly.uninstaller.Views.Pages"
-      mc:Ignorable="d"
-      Title="MainPage" Height="450" Width="800">
+      xmlns:controls="clr-namespace:neatly.uninstaller.Views.Controls"
+      mc:Ignorable="d">
     <Grid>
         
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="450" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
         
+        <controls:SidebarControl Grid.Column="0" />
         
     </Grid>
 </Page>

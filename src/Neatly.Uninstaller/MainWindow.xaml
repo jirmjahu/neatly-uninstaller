@@ -5,10 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:neatly.uninstaller"
         mc:Ignorable="d"
-        Title="Neatly Uninstaller" Height="450" Width="800">
+        Title="Neatly Uninstaller"
+        Height="650"
+        Width="1000"
+        Background="{DynamicResource WindowBackgroundBrush}"
+        Foreground="{DynamicResource TextBrush}">
+    
     <Grid>
-        
-        
-        
+        <Frame x:Name="MainFrame"></Frame>
     </Grid>
 </Window>

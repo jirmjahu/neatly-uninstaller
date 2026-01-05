@@ -15,10 +15,5 @@ public class Uninstaller
         Instance = this;
         AppScanner = new Win32AppScanner();
         ThemeManager = new ThemeManager();
-        
-        foreach (var installedApp in AppScanner.FindInstalledApps())
-        {
-            Console.WriteLine(installedApp.Name);
-        }
     }
 }
