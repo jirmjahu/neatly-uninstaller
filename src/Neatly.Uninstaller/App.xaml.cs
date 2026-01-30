@@ -11,7 +11,5 @@ public partial class App : Application
         base.OnStartup(e);
         
         Uninstaller uninstaller = new();
-        
-        uninstaller.ThemeManager.SetTheme(AppTheme.System);
     }
 }

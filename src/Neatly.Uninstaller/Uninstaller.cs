@@ -15,5 +15,6 @@ public class Uninstaller
         Instance = this;
         AppScanner = new Win32AppScanner();
         ThemeManager = new ThemeManager();
+        ThemeManager.SetTheme(AppTheme.Dark);
     }
 }
