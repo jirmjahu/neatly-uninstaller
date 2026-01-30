@@ -12,15 +12,7 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-
-        <TextBox Grid.Row="0"
-                 Height="30"
-                 Margin="10"
-                 Padding="10,0"
-                 FontSize="15"
-                 Text="Search..."
-                 VerticalContentAlignment="Center" />
-
+        
         <DockPanel Grid.Row="1" Margin="10" VerticalAlignment="Center">
             <TextBlock Text="Installed Applications"
                        FontFamily="Segoe UI Semibold"

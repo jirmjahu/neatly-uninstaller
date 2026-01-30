@@ -4,14 +4,22 @@
     <Color x:Key="WindowBackgroundColor">#FFFFFF</Color>
     <Color x:Key="TextColor">#000000</Color>
     <Color x:Key="ButtonBackgroundColor">#E0E0FF</Color>
-    <Color x:Key="ButtonHoverColor">#C0C0FF</Color>
+    <Color x:Key="ButtonHoverColor">#1E90FF</Color>
     <Color x:Key="AccentColor">#1E90FF</Color>
+    <Color x:Key="SearchBackgroundColor">#F2F2F7</Color>
+    <Color x:Key="SearchBorderColor">#D0D0D7</Color>
+    <Color x:Key="SearchIconColor">#6E6E73</Color>
+    <Color x:Key="SearchPlaceholderColor">#8E8E93</Color>
 
     <SolidColorBrush x:Key="WindowBackgroundBrush" Color="{StaticResource WindowBackgroundColor}" />
     <SolidColorBrush x:Key="TextBrush" Color="{StaticResource TextColor}" />
     <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="{StaticResource ButtonBackgroundColor}" />
     <SolidColorBrush x:Key="ButtonHoverBrush" Color="{StaticResource ButtonHoverColor}" />
     <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="SearchBackgroundBrush" Color="{StaticResource SearchBackgroundColor}" />
+    <SolidColorBrush x:Key="SearchBorderBrush" Color="{StaticResource SearchBorderColor}" />
+    <SolidColorBrush x:Key="SearchIconBrush" Color="{StaticResource SearchIconColor}" />
+    <SolidColorBrush x:Key="SearchPlaceholderBrush" Color="{StaticResource SearchPlaceholderColor}" />
 
     <Style TargetType="Window">
         <Setter Property="Background" Value="{DynamicResource WindowBackgroundBrush}" />
@@ -26,25 +34,55 @@
         <Setter Property="Background" Value="{DynamicResource ButtonBackgroundBrush}" />
         <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource ButtonBackgroundBrush}" />
-        <Setter Property="Padding" Value="6,3"/>
-        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Cursor" Value="Hand" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
-                    <Border Background="{TemplateBinding Background}" 
-                            BorderBrush="{TemplateBinding BorderBrush}" 
-                            BorderThickness="1" CornerRadius="2">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="1" CornerRadius="3">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" Value="{DynamicResource ButtonHoverBrush}"/>
+                            <Setter Property="Background" Value="{DynamicResource ButtonHoverBrush}" />
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
-                            <Setter Property="Background" Value="{DynamicResource ButtonHoverBrush}"/>
+                            <Setter Property="Background" Value="{DynamicResource ButtonHoverBrush}" />
+                            <Setter Property="Opacity" Value="0.85" />
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="False">
-                            <Setter Property="Opacity" Value="0.5"/>
+                            <Setter Property="Opacity" Value="0.85" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="TopBarButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Margin" Value="6,0" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="Bd"
+                            CornerRadius="3"
+                            Background="{TemplateBinding Background}">
+                        <ContentPresenter
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background"
+                                    Value="{DynamicResource ButtonHoverBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Opacity"
+                                    Value="0.85" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
