@@ -27,6 +27,7 @@
 
         <ListBox Grid.Row="2"
                  ItemsSource="{Binding Apps}"
+                 SelectedItem="{Binding SelectedApp, Mode=TwoWay}"
                  BorderThickness="0"
                  Background="Transparent"
                  HorizontalContentAlignment="Stretch"

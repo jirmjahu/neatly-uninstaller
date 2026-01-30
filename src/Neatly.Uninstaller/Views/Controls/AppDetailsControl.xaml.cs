@@ -1,20 +1,17 @@
-﻿using System.Collections.ObjectModel;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 using neatly.uninstaller.Models;
 
-namespace neatly.uninstaller.Views.Controls;
+namespace Neatly.Uninstaller.Views.Controls;
 
-public partial class SidebarControl : UserControl
+public partial class AppDetailsControl : UserControl
 {
-    
-    public List<InstalledApp> Apps { get; } = Uninstaller.Instance.AppScanner.FindInstalledApps();
     
     public static readonly DependencyProperty SelectedAppProperty =
         DependencyProperty.Register(
             nameof(SelectedApp),
             typeof(InstalledApp),
-            typeof(SidebarControl),
+            typeof(AppDetailsControl),
             new PropertyMetadata(null));
 
     public InstalledApp SelectedApp
@@ -23,14 +20,9 @@ public partial class SidebarControl : UserControl
         set => SetValue(SelectedAppProperty, value);
     }
     
-    public SidebarControl()
+    public AppDetailsControl()
     {
         InitializeComponent();
         DataContext = this;
-        
-        if (Apps.Count > 0)
-        {
-            SelectedApp = Apps[0];
-        }
     }
 }
