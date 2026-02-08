@@ -9,9 +9,9 @@
     <Color x:Key="CardBackgroundColor">#25253A</Color>
     <Color x:Key="SeparatorColor">#3A3A55</Color>
     <Color x:Key="SearchBackgroundColor">#2A2A40</Color>
-    <Color x:Key="SearchBorderColor">#3A3A55</Color>
     <Color x:Key="SearchIconColor">#B0B0C0</Color>
     <Color x:Key="SearchPlaceholderColor">#9A9AB0</Color>
+    <Color x:Key="BottomPanelBackgroundColor">#1a1a2b</Color>
     
     <SolidColorBrush x:Key="WindowBackgroundBrush" Color="{StaticResource WindowBackgroundColor}" />
     <SolidColorBrush x:Key="TextBrush" Color="{StaticResource TextColor}" />
@@ -21,9 +21,9 @@
     <SolidColorBrush x:Key="CardBackgroundBrush" Color="{StaticResource CardBackgroundColor}" />
     <SolidColorBrush x:Key="SeparatorBrush" Color="{StaticResource SeparatorColor}" />
     <SolidColorBrush x:Key="SearchBackgroundBrush" Color="{StaticResource SearchBackgroundColor}" />
-    <SolidColorBrush x:Key="SearchBorderBrush" Color="{StaticResource SearchBorderColor}" />
     <SolidColorBrush x:Key="SearchIconBrush" Color="{StaticResource SearchIconColor}" />
     <SolidColorBrush x:Key="SearchPlaceholderBrush" Color="{StaticResource SearchPlaceholderColor}" />
+    <SolidColorBrush x:Key="BottomPanelBackgroundBrush" Color="{StaticResource BottomPanelBackgroundColor}" />
 
     <Style TargetType="Window">
         <Setter Property="Background" Value="{DynamicResource WindowBackgroundBrush}" />

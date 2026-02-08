@@ -10,7 +10,9 @@
     <Border Background="{DynamicResource CardBackgroundBrush}"
             CornerRadius="10"
             Padding="16"
-            Margin="20">
+            Margin="20"
+            BorderThickness="1"
+            BorderBrush="#33FFFFFF">
 
         <Grid>
             <Grid.RowDefinitions>
@@ -31,14 +33,13 @@
                     <ColumnDefinition Width="12" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-
-                <!-- replace with image! -->
-                    <Image Source="{Binding SelectedApp.Icon}"
-                           Width="48"
-                           Height="48"
-                           Stretch="UniformToFill"
-                           ClipToBounds="True"
-                           SnapsToDevicePixels="True"/>
+                
+                <Image Source="{Binding SelectedApp.Icon}"
+                       Width="48"
+                       Height="48"
+                       Stretch="UniformToFill"
+                       ClipToBounds="True"
+                       SnapsToDevicePixels="True" />
 
                 <StackPanel Grid.Column="2" VerticalAlignment="Center">
                     <TextBlock

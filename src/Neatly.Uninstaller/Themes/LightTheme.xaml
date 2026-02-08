@@ -7,7 +7,6 @@
     <Color x:Key="ButtonHoverColor">#1E90FF</Color>
     <Color x:Key="AccentColor">#1E90FF</Color>
     <Color x:Key="SearchBackgroundColor">#F2F2F7</Color>
-    <Color x:Key="SearchBorderColor">#D0D0D7</Color>
     <Color x:Key="SearchIconColor">#6E6E73</Color>
     <Color x:Key="SearchPlaceholderColor">#8E8E93</Color>
 
@@ -17,7 +16,6 @@
     <SolidColorBrush x:Key="ButtonHoverBrush" Color="{StaticResource ButtonHoverColor}" />
     <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource AccentColor}" />
     <SolidColorBrush x:Key="SearchBackgroundBrush" Color="{StaticResource SearchBackgroundColor}" />
-    <SolidColorBrush x:Key="SearchBorderBrush" Color="{StaticResource SearchBorderColor}" />
     <SolidColorBrush x:Key="SearchIconBrush" Color="{StaticResource SearchIconColor}" />
     <SolidColorBrush x:Key="SearchPlaceholderBrush" Color="{StaticResource SearchPlaceholderColor}" />
 
