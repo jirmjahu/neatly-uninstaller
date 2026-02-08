@@ -20,7 +20,7 @@
             </Grid.ColumnDefinitions>
 
             <TextBlock Grid.Column="0"
-                       Text="32"
+                       Text="{Binding AppCount}"
                        FontSize="15"
                        FontWeight="Bold"
                        VerticalAlignment="Center"
