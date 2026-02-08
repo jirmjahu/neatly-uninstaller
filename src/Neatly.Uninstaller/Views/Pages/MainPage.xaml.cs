@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace neatly.uninstaller.Views.Pages;
+namespace Neatly.Uninstaller.Views.Pages;
 
 public partial class MainPage : Page
 {

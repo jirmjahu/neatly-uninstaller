@@ -1,4 +1,4 @@
-﻿namespace neatly.uninstaller.Theming;
+﻿namespace Neatly.Uninstaller.Theming;
 
 public enum AppTheme
 {

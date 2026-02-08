@@ -1,6 +1,6 @@
-﻿using neatly.uninstaller.Models;
+﻿using Neatly.Uninstaller.Models;
 
-namespace neatly.uninstaller.Services;
+namespace Neatly.Uninstaller.Services;
 
 public interface IAppScanner
 {

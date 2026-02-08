@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using Microsoft.Win32;
 
-namespace neatly.uninstaller.Theming;
+namespace Neatly.Uninstaller.Theming;
 
 public class ThemeManager
 {

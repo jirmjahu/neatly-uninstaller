@@ -1,10 +1,10 @@
 ﻿using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Interop;
-using neatly.uninstaller.Theming;
-using neatly.uninstaller.Views.Pages;
+using Neatly.Uninstaller.Theming;
+using Neatly.Uninstaller.Views.Pages;
 
-namespace neatly.uninstaller;
+namespace Neatly.Uninstaller;
 
 public partial class MainWindow : Window
 {

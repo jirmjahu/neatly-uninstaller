@@ -1,7 +1,7 @@
-﻿using neatly.uninstaller.Services;
-using neatly.uninstaller.Theming;
+﻿using Neatly.Uninstaller.Services;
+using Neatly.Uninstaller.Theming;
 
-namespace neatly.uninstaller;
+namespace Neatly.Uninstaller;
 
 public class Uninstaller
 {
@@ -9,7 +9,7 @@ public class Uninstaller
 
     public IAppScanner AppScanner { get; }
     public ThemeManager ThemeManager { get; }
-    
+
     public Uninstaller()
     {
         Instance = this;

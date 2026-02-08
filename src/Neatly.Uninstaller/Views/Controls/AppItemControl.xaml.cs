@@ -2,7 +2,7 @@
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace neatly.uninstaller.Views.Controls;
+namespace Neatly.Uninstaller.Views.Controls;
 
 public partial class AppItemControl : UserControl
 {

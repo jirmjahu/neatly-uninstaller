@@ -1,6 +1,6 @@
 ﻿using System.Windows.Media;
 
-namespace neatly.uninstaller.Models;
+namespace Neatly.Uninstaller.Models;
 
 public class InstalledApp
 {

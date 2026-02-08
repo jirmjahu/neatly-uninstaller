@@ -1,7 +1,7 @@
 ﻿using Microsoft.Win32;
-using neatly.uninstaller.Models;
+using Neatly.Uninstaller.Models;
 
-namespace neatly.uninstaller.Services;
+namespace Neatly.Uninstaller.Services;
 
 public class Win32AppScanner : IAppScanner
 {

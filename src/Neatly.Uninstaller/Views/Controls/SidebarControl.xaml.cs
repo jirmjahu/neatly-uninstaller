@@ -1,9 +1,8 @@
-﻿using System.Collections.ObjectModel;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using neatly.uninstaller.Models;
+using Neatly.Uninstaller.Models;
 
-namespace neatly.uninstaller.Views.Controls;
+namespace Neatly.Uninstaller.Views.Controls;
 
 public partial class SidebarControl : UserControl
 {

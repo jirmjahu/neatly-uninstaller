@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using neatly.uninstaller.Models;
+using Neatly.Uninstaller.Models;
 
 namespace Neatly.Uninstaller.Views.Controls;
 

@@ -1,7 +1,6 @@
-﻿<Application x:Class="neatly.uninstaller.App"
+﻿<Application x:Class="Neatly.Uninstaller.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:neatly.uninstaller"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
