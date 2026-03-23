@@ -31,7 +31,11 @@ public partial class AppDetailsControl : UserControl
         if (string.IsNullOrEmpty(SelectedApp.InstallLocation))
         {
             MessageBox.Show(
-                "The folder of the application was not found", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                "The folder of the application was not found",
+                "Error",
+                MessageBoxButton.OK,
+                MessageBoxImage.Error
+            );
             return;
         }
 

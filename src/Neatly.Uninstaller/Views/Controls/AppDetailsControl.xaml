@@ -92,8 +92,7 @@
                 <Separator Background="{DynamicResource SeparatorBrush}"
                            Margin="0,8" />
 
-                <Grid Margin="10,15,10,0"
-                      Height="50">
+                <Grid Margin="10,15,10,0" Height="50">
 
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />

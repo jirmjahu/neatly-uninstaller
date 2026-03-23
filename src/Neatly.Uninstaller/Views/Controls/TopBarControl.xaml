@@ -29,12 +29,13 @@
                            Margin="12,0,6,0"
                            VerticalAlignment="Center" />
 
-                <TextBox Background="Transparent"
+                <TextBox x:Name="SearchBox"
+                         Background="Transparent"
                          BorderThickness="0"
                          Foreground="{DynamicResource TextBrush}"
                          FontSize="15"
                          VerticalContentAlignment="Center"
-                         Text="Search..."
+                         TextChanged="SearchBox_TextChanged"
                          CaretBrush="{DynamicResource TextBrush}" />
             </DockPanel>
         </Border>
@@ -51,7 +52,7 @@
                                FontFamily="Segoe MDL2 Assets"
                                FontSize="14"
                                Margin="0,3,6,0" />
-                    
+
                     <TextBlock Text="Logs" FontSize="14" />
                 </StackPanel>
             </Button>
@@ -67,7 +68,7 @@
                                FontFamily="Segoe MDL2 Assets"
                                FontSize="14"
                                Margin="0,3,6,0" />
-                    
+
                     <TextBlock Text="Settings" FontSize="14" />
                 </StackPanel>
             </Button>

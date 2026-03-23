@@ -18,9 +18,9 @@
             <RowDefinition Height="35"></RowDefinition>
         </Grid.RowDefinitions>
         
-        <controls:TopBarControl Grid.ColumnSpan="2" Grid.Row="0" />
+        <controls:TopBarControl x:Name="TopBar" Grid.ColumnSpan="2" Grid.Row="0" />
         <controls:SidebarControl Margin="0, 0, 0, 20" x:Name="Sidebar" Grid.Column="0" Grid.Row="1" />
         <controls:AppDetailsControl SelectedApp="{Binding SelectedApp, ElementName=Sidebar}" Grid.Column="1" Grid.Row="1" />
-        <controls:BottomPanelControl Grid.Row="2" Grid.ColumnSpan="2" ></controls:BottomPanelControl>
+        <controls:BottomPanelControl Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="0"></controls:BottomPanelControl>
     </Grid>
 </Page>
