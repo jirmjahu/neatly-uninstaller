@@ -28,7 +28,7 @@ public partial class AppDetailsControl : UserControl
 
     private void OpenFolder_Click(object sender, RoutedEventArgs e)
     {
-        if (string.IsNullOrEmpty(SelectedApp.InstallLocation))
+        if (string.IsNullOrWhiteSpace(SelectedApp.InstallLocation))
         {
             MessageBox.Show(
                 "The folder of the application was not found",

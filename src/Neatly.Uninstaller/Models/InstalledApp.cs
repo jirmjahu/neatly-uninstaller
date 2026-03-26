@@ -2,24 +2,22 @@
 
 namespace Neatly.Uninstaller.Models;
 
-public class InstalledApp
+public class InstalledApp(
+    string name,
+    string? publisher,
+    string? version,
+    string? installLocation,
+    string? uninstallCommand,
+    string? displayIconPath,
+    ImageSource? icon)
 {
-    public string Name { get;}
-    public string Publisher { get; }
-    public string Version { get; }
-    public string InstallLocation { get; }
-    public string UninstallCommand { get; }
-    public string DisplayIconPath { get; }
-    public ImageSource? Icon { get; }
+    public string Name { get; set; } = name;
+    public string? Publisher { get; set; } = publisher;
+    public string? Version { get; set; } = version;
 
-    public InstalledApp(string name, string publisher, string version, string installLocation, string uninstallCommand, string displayIconPath, ImageSource? icon)
-    {
-        Name = name;
-        Publisher = publisher;
-        Version = version;
-        InstallLocation = installLocation;
-        UninstallCommand = uninstallCommand;
-        DisplayIconPath = displayIconPath;
-        Icon = icon;
-    }
+    public string? InstallLocation { get; set; } = installLocation;
+    public string? UninstallCommand { get; set; } = uninstallCommand;
+    public string? DisplayIconPath { get; set; } = displayIconPath;
+
+    public ImageSource? Icon { get; set; } = icon;
 }
