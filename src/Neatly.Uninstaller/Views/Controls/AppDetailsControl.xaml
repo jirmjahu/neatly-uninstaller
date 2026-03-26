@@ -88,6 +88,18 @@
                                Text="{Binding SelectedApp.InstallLocation}"
                                TextWrapping="Wrap" />
                 </Grid>
+                
+                <Grid Margin="0,5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="120" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="Uninstall Command:" />
+                    <TextBlock Grid.Column="1"
+                               Text="{Binding SelectedApp.UninstallCommand}"
+                               TextWrapping="Wrap" />
+                </Grid>
 
                 <Separator Background="{DynamicResource SeparatorBrush}"
                            Margin="0,8" />
