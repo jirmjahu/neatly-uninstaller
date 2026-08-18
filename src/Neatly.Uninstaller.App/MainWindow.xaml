@@ -7,8 +7,21 @@
         Title="Neatly Uninstaller"
         Height="450"
         Width="800"
-        Background="{DynamicResource BackgroundBrush}">
+        Background="{DynamicResource Background}">
     <Grid>
+        <StackPanel Width="300" 
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+            <TextBlock FontSize="20"
+                       FontWeight="SemiBold"
+                       Text="Neatly Uninstaller" />
 
+            <TextBox Margin="0, 10, 0 ,10"
+                     Text="Suchen..." />
+
+            <Button Width="100"
+                    HorizontalAlignment="Left"
+                    Content="Abc" />
+        </StackPanel>
     </Grid>
 </Window>
