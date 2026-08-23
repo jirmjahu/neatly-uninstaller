@@ -3,25 +3,21 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sidebar="clr-namespace:Neatly.Uninstaller.App.Views.Controls.Sidebar"
         mc:Ignorable="d"
         Title="Neatly Uninstaller"
         Height="450"
         Width="800"
         Background="{DynamicResource Background}">
     <Grid>
-        <StackPanel Width="300" 
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center">
-            <TextBlock FontSize="20"
-                       FontWeight="SemiBold"
-                       Text="Neatly Uninstaller" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
 
-            <TextBox Margin="0, 10, 0 ,10"
-                     Text="Suchen..." />
+        <sidebar:Sidebar x:Name="SidebarView"
+                         Grid.Row="0"
+                         Grid.Column="0" />
 
-            <Button Width="100"
-                    HorizontalAlignment="Left"
-                    Content="Abc" />
-        </StackPanel>
     </Grid>
 </Window>
